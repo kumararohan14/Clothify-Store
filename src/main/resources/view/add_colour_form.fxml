@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="546.0" prefWidth="1139.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddColourController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff2f4" height="322.0" layoutX="247.0" layoutY="158.0" stroke="BLACK" strokeType="INSIDE" width="270.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="229.0" layoutY="18.0" prefHeight="50.0" prefWidth="879.0" style="-fx-background-color: blue;" text="POINT OF SALES">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="88.0" mouseTransparent="true" onMouseClicked="#btnBrandFormOnAction" prefHeight="39.0" prefWidth="184.0" style="-fx-background-color: blue;" text="   Brand">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="88.0" mouseTransparent="true" onMouseClicked="#btnColourFormOnAction" prefHeight="39.0" prefWidth="174.0" style="-fx-background-color: blue;" text="   Colur">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="830.0" layoutY="88.0" mouseTransparent="true" onMouseClicked="#btnSizetFormOnAction" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   Size">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="88.0" mouseTransparent="true" onMouseClicked="#btnCategoryFormOnAction" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   Category">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="20.0" mouseTransparent="true" onMouseClicked="#btnProductFormOnAction" prefHeight="78.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   product">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="211.0" mouseTransparent="true" onMouseClicked="#btnPosFormOnAction" prefHeight="94.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   pos">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="321.0" mouseTransparent="true" onMouseClicked="#btnSearchFormOnAction" prefHeight="86.0" prefWidth="200.0" style="-fx-background-color: blue;" text="  search">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="422.0" mouseTransparent="true" onMouseClicked="#btnSupplierFormOnAction" prefHeight="94.0" prefWidth="200.0" style="-fx-background-color: blue;" text="  supplier">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="268.0" layoutY="248.0" onAction="#txtName" text="CategoryName" />
+      <JFXComboBox layoutX="272.0" layoutY="298.0" onAction="#txtStatus" prefHeight="26.0" prefWidth="141.0" promptText="status" />
+      <Label layoutX="22.0" layoutY="112.0" mouseTransparent="true" onMouseClicked="#btnProductFormOnAction" prefHeight="85.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   product">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView layoutX="537.0" layoutY="158.0" prefHeight="322.0" prefWidth="430.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="BrandID" />
+          <TableColumn fx:id="colName" prefWidth="144.0" text="BrandName" />
+            <TableColumn fx:id="colStatus" prefWidth="210.39999999999998" text="Status" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="272.0" layoutY="361.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: blue;" text="Add" />
+      <JFXButton layoutX="347.0" layoutY="361.0" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: blue;" text="Update" />
+      <JFXButton layoutX="434.0" layoutY="361.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: blue;" text="Delete" />
+      <Label alignment="TOP_CENTER" layoutX="263.0" layoutY="171.0" mouseTransparent="true" onMouseClicked="#btnBrandFormOnAction" prefHeight="39.0" prefWidth="238.0" style="-fx-background-color: White;" text="   category">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

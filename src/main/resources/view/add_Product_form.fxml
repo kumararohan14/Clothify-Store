@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="546.0" prefWidth="1139.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="20.0" prefHeight="50.0" prefWidth="879.0" style="-fx-background-color: blue;" text="POINT OF SALES">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="78.0" mouseTransparent="true" onMouseClicked="#btnBrandFormOnAction" prefHeight="39.0" prefWidth="184.0" style="-fx-background-color: blue;" text="   Brand">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="457.0" layoutY="78.0" mouseTransparent="true" onMouseClicked="#btnColourFormOnAction" prefHeight="39.0" prefWidth="184.0" style="-fx-background-color: blue;" text="   Colur">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="876.0" layoutY="78.0" mouseTransparent="true" onMouseClicked="#btnSizetFormOnAction" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   Size">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="659.0" layoutY="78.0" mouseTransparent="true" onMouseClicked="#btnCategoryFormOnAction" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   Category">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="20.0" mouseTransparent="true" onMouseClicked="#btnProductFormOnAction" prefHeight="78.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   product">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="211.0" mouseTransparent="true" onMouseClicked="#btnPosFormOnAction" prefHeight="94.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   pos">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="321.0" mouseTransparent="true" onMouseClicked="#btnSearchFormOnAction" prefHeight="86.0" prefWidth="200.0" style="-fx-background-color: blue;" text="  search">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="422.0" mouseTransparent="true" onMouseClicked="#btnSupplierFormOnAction" prefHeight="94.0" prefWidth="200.0" style="-fx-background-color: blue;" text="  supplier">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="112.0" mouseTransparent="true" onMouseClicked="#btnProductFormOnAction" prefHeight="85.0" prefWidth="200.0" style="-fx-background-color: blue;" text="   product">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView layoutX="240.0" layoutY="317.0" prefHeight="210.0" prefWidth="838.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="75.0" text="code" />
+          <TableColumn fx:id="colName" prefWidth="126.39996337890625" text="ProducName" />
+            <TableColumn fx:id="colCostPrice" prefWidth="126.39996337890625" text="Cost_price" />
+            <TableColumn fx:id="colRetailPrice" prefWidth="126.39996337890625" text="Retails_price" />
+            <TableColumn fx:id="colQty" prefWidth="74.4000244140625" text="Qty" />
+            <TableColumn fx:id="colDes" prefWidth="100.79998779296875" text="Description" />
+            <TableColumn fx:id="colBarcode" prefWidth="100.79998779296875" text="Barcode" />
+            <TableColumn fx:id="colStatus" prefWidth="100.79998779296875" text="Status" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="840.0" layoutY="287.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: blue;" text="Add" />
+      <JFXButton layoutX="909.0" layoutY="286.0" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: blue;" text="Update" />
+      <JFXButton layoutX="988.0" layoutY="287.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: blue;" text="Delete" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="137.0" layoutX="240.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" width="838.0" />
+      <TextField fx:id="txtID" layoutX="258.0" layoutY="163.0" text="ID" />
+      <TextField fx:id="txtName" layoutX="258.0" layoutY="201.0" text="Name" />
+      <TextField fx:id="txtBarcode" layoutX="258.0" layoutY="237.0" text="Barcode" />
+      <TextField fx:id="txtCostPrice" layoutX="446.0" layoutY="163.0" text="cost_Price" />
+      <TextField fx:id="txtRetailPrice" layoutX="446.0" layoutY="201.0" text="Retail_Price" />
+      <TextField fx:id="txtQty" layoutX="446.0" layoutY="237.0" prefHeight="26.0" prefWidth="94.0" text="Qty" />
+      <JFXComboBox fx:id="comBrand" layoutX="631.0" layoutY="163.0" prefHeight="26.0" prefWidth="141.0" promptText="brand" />
+      <JFXComboBox fx:id="comColour" layoutX="631.0" layoutY="200.0" prefHeight="26.0" prefWidth="141.0" promptText="colour" />
+      <JFXComboBox fx:id="comCategory" layoutX="631.0" layoutY="237.0" prefHeight="26.0" prefWidth="141.0" promptText="category" />
+      <JFXComboBox fx:id="comtatus" layoutX="803.0" layoutY="163.0" prefHeight="26.0" prefWidth="115.0" promptText="status" />
+      <JFXComboBox fx:id="comSupplier" layoutX="803.0" layoutY="200.0" prefHeight="26.0" prefWidth="115.0" promptText="supplier" />
+      <JFXComboBox fx:id="comSize" layoutX="803.0" layoutY="237.0" prefHeight="26.0" prefWidth="115.0" promptText="size" />
+      <JFXTextArea fx:id="txtDes" layoutX="931.0" layoutY="166.0" prefHeight="94.0" prefWidth="94.0" text="&#9;&#10;&#10;&#9;Description&#10;" />
+   </children>
+</AnchorPane>
